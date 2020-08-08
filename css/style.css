@@ -1,0 +1,21 @@
+.background-image {
+  background-image: url("../assets/img/background.png");
+  background-size: 200vh, 200vw;
+  background-repeat: no-repeat;
+
+  /* background-size: cover; */
+}
+
+#question-container {
+  display: grid;
+  grid-template-columns: repeat(20, minmax(0, 12%));
+  grid-template-rows: auto;
+
+  /* background-color: #000000; */
+}
+
+#question-one {
+  margin-top: 5em;
+  grid-column-start: 5;
+  grid-column-end: 12;
+}
