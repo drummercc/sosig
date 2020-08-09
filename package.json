@@ -1,0 +1,21 @@
+{
+  "name": "nodejsapp",
+  "version": "0.0.1",
+  "description": "This website will ask silly questions then poll the answers",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app",
+    "dev": "nodemon app"
+  },
+  "author": "TeamSosig",
+  "license": "MIT",
+  "dependencies": {
+    "ejs": "^3.1.3",
+    "express": "^4.17.1",
+    "google-spreadsheet": "^2.0.9",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {},
+  "keywords": []
+}
