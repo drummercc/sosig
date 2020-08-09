@@ -9,12 +9,12 @@ body {
 }
 
 .chart {
-  width: 600px;
-  height: 300px;
+  /* width: 100vw;
+  height: 100vh; */
   display: flex;
 }
 
-.numbers {
+/* .numbers {
   color: #fff;
   margin: 0;
   padding: 0;
@@ -37,7 +37,7 @@ body {
   position: absolute;
   bottom: 0;
   right: 10px;
-}
+} */
 
 .bars {
   color: #fff;
@@ -47,13 +47,11 @@ body {
   margin: 0;
   padding: 0;
   display: inline-block;
-  width: 500px;
-  height: 300px;
 }
 
 .bars li {
   display: table-cell;
-  width: 100px;
+  width: 100vw;
   height: 300px;
   position: relative;
 }
@@ -66,15 +64,16 @@ body {
 }
 
 .bars .bar {
-  display: flex;
-  justify-content: space-between;
   background: #17c0eb;
-  width: 75px;
-  height: 0px;
+  width: 20em;
   position: absolute;
   bottom: 0;
-  margin-left: 25px;
+  /* margin-left: 25px; */
   text-align: center;
+}
+
+.bar {
+  justify-content: center;
 }
 
 .bars .bar:before {
