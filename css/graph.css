@@ -1,0 +1,85 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #333;
+}
+
+.chart {
+  width: 600px;
+  height: 300px;
+  display: flex;
+}
+
+.numbers {
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  width: 50px;
+  height: 100%;
+  display: flex;
+  float: left;
+}
+
+.numbers li {
+  list-style: none;
+  height: 150px;
+  position: relative;
+  bottom: 145px;
+}
+
+.numbers span {
+  font-size: 12px;
+  font-weight: 600;
+  position: absolute;
+  bottom: 0;
+  right: 10px;
+}
+
+.bars {
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+  background: #555;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  width: 500px;
+  height: 300px;
+}
+
+.bars li {
+  display: table-cell;
+  width: 100px;
+  height: 300px;
+  position: relative;
+}
+
+.bars span {
+  width: 100%;
+  position: absolute;
+  bottom: -30px;
+  text-align: center;
+}
+
+.bars .bar {
+  display: flex;
+  justify-content: space-between;
+  background: #17c0eb;
+  width: 75px;
+  height: 0px;
+  position: absolute;
+  bottom: 0;
+  margin-left: 25px;
+  text-align: center;
+}
+
+.bars .bar:before {
+  color: #fff;
+  content: attr(data-percentage) "";
+  position: relative;
+  bottom: 20px;
+}

@@ -1,0 +1,30 @@
+<html>
+  <head>
+    <script>
+      function draw() {
+        var n = document.getElementById("num").value;
+        var graphValues = n.split(",");
+
+        var canvas = document.getElementById("myCanvas");
+        var ctx = canvas.getContext("2d");
+
+        var width = 40;
+        var X = 50;
+
+        ctx.fillStyle = "#008080";
+
+        for (var i = 0; i < graphValues.length; i++) {
+          var h = graphValues[i];
+          ctx.fillRect(X, canvas.height - h, width, h);
+          X += width + 15;
+        }
+      }
+
+      function reset() {
+        var canvass = document.getElementById("myCanvas");
+        var ctx = canvas.getContext("2d");
+        ctx.clearRect(0, 0, canvas.width.canvas.height);
+      }
+    </script>
+  </head>
+</html>
