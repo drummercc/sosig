@@ -6,6 +6,14 @@
   /* background-size: cover; */
 }
 
+.question-container-flex {
+  display: flex;
+  height: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
 #question-container {
   display: grid;
   grid-template-columns: repeat(20, minmax(0, 12%));
@@ -16,6 +24,49 @@
 
 #question-one {
   margin-top: 5em;
-  grid-column-start: 5;
+  text-align: center;
+  grid-column-start: 1;
   grid-column-end: 12;
+}
+
+.btn {
+  border: 2px solid black;
+  background-color: Transparent;
+  color: black;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  outline: none;
+}
+
+/* Green */
+.success {
+  border-color: #ffffff;
+  color: #ffffff;
+}
+
+/* HOVER STATE */
+/* .success:hover {
+  background-color: #4caf50;
+  color: white;
+} */
+
+.question {
+  height: 15em;
+}
+
+.question-box {
+  display: grid;
+  margin-top: 0em;
+  grid-column-start: 1;
+  grid-column-end: 12;
+}
+
+.question-row-2 {
+  display: flex;
+}
+
+.answer {
+  width: 25em;
+  height: 10em;
 }
