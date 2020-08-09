@@ -19,3 +19,44 @@
   grid-column-start: 5;
   grid-column-end: 12;
 }
+
+.btn {
+  border: 2px solid black;
+  background-color: Transparent;
+  color: black;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  outline: none;
+}
+ 
+/* Green */
+.success {
+  border-color: #ffffff;
+  color: #ffffff;
+}
+.success:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.question {
+  width: 50em;
+  height: 15em;
+}
+
+.questions-button{
+  margin-top: 5em;
+  margin-left: 5em;
+  grid-column-start: 5;
+  grid-column-end: 12;
+}
+
+.questions-row-1{
+  display: flex;
+}
+
+.answer{
+  width: 25em;
+  height: 15em;
+}
